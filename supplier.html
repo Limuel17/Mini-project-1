@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="orderlist.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <title>Customers</title>
+    <link rel="stylesheet" href="supplier.css">
+</head>
+<body>
+
+
+    <nav class="sidebar close">
+
+        <header>
+           
+            <!--Image logo-->
+            <div class="image-txt">
+              
+                     <span class="image">
+                     <img src="logo4.png" alt="logo">
+                </span>
+
+                 <!--Fonts Logo-->
+                <div class="txt header-text">
+                    <span class="name">GROUP-3</span>
+                    <span class="profession">Inventory Systems</span>
+                </div>
+                </div>
+
+             <!--Arrow for open close-->
+            <i class='bx bx-chevron-right toggle'></i>
+
+        </header>
+
+
+        <!--Sidebar components-->
+
+        <div class="menu-bar">
+            <div class="menu">
+                
+                <!--Dashboard HOME-->
+                <li class="nav-link">
+                 <a href="main-dashboard.html" class="active"><i class='bx bxs-dashboard icons icon' ></i><span class="text nav-text">Dashboard</span></a></li>
+                
+                
+                <ul class="menu-links">
+                    
+                    <div class="menu"><hr>Menu</div>
+                   
+                    <!--User Management-->
+                    <li class="nav-link">
+                        <a href="#"><i class='bx bxs-user icons' ></i><span class="text nav-text">User Management</span></a></li>
+
+                    
+                    <!--Items-->
+                    <li class="nav-link">
+                        <a href="#"><i class='bx bxs-component icons' ></i><span class="text nav-text itms">Items</span></a></li>
+                    
+                    <!--Sales Order-->
+                    <li class="nav-link">
+                        <a href="#"><i class='bx bxs-shopping-bag-alt icons' ></i><span class="text nav-text sloder">Sales Order</span></a></li>
+                        
+                    <!--Supplier-->
+                    <li class="nav-link">
+                        <a href="#"><i class='bx bx-sitemap icons' ></i><span class="text nav-text sup">Supplier</span></a></li>
+                    
+                   <!--Customers-->
+                    <li class="nav-link">
+                        <a href="#"><i class='bx bxs-user-detail icons'></i><span class="text nav-text custo">Customers</span></a></li>
+                </ul>
+            </div>
+
+
+             <!--Bottom content-->
+
+              <!--LOG OUT-->
+            <div class="bottom-content">
+                <li class="show-modal" >
+                  
+                        <button class='bx bx-log-out icons'><span class="text">Log-out</span></button>
+                </li>
+
+
+                  <!--Dark mode-->
+                <li class="mode">
+                    <div class="moon-sun">
+                    <i class='bx bxs-moon icons moon'></i>
+                    <i class='bx bxs-sun icons sun'></i>
+                </div>
+                    <span class="text mode-text darkmode">Dark Mode</span>
+                    <div class="toggle-switch">
+                    <span class="switch"></span>
+                   </div>
+                </li>
+            </div>  
+        </div>
+    </nav>
+
+
+             <!--items LIST-->
+
+
+
+             <section class="container-2">    
+   
+             <!--Opening-->
+<div class="company">
+  <h1>COMPANY PARTNERS</h1>
+  </div>
+  
+  <!--Company Logo-->
+  <div class="row">
+    <div class="column">
+      <p class="lgo"><a href="https://www.nike.com/ph"><img src="images/nike-logo.png" alt="Nike-logo" ></a></p>
+    </div>
+    <div class="column">
+      <p class="lgo"><a href="https://www.adidas.com.ph"><img src="images/Adidas-logo.png" alt="Addidas-logo" ></a></p>
+    </div>
+    <div class="column">
+      <p class="lgo"><a href="https://ph.puma.com/ph"><img src="images/Puma-logo.png" alt="Puma-logo" ></a></p>
+    </div>
+    <div class="column">
+      <p class="lgo"><a href="https://www.underarmour.com.ph"><img src="images/ua-logo.png" alt="Under Armor-logo" ></a></p>
+    </div>
+  </div>
+  
+  <!--Closing-->
+  <div class="container-catalog">
+      <h2>
+          <small class="text-center">GROUP-3 Shoes Inventory Systems</small>
+      </h2>
+      <p class="opening-spiel"> Discover collection shoes for men on Shop & Co. Philippines from our partners brands. Choose your new favorite pair of kicks and have it delivered right to you at the click of a button, all from the convenience of your own home. As the leading online fashion destination in Asia, Shop & Co. has endless style possibilities thanks to an ever-expanding range of shoes.  We'll deliver it right to your doorstep with free shipping (T&C applies) and the convenient option of Cash on Delivery. Not sure about the sizing? You may return the item with our 30 days-free return policy. Purchase now and get the best deals, discounts, promos, and voucher codes for the latest shoes only here at Shop & Co. Philippines.
+      </p>
+        </section>
+
+
+
+
+        <div class="modal-box">
+        <h2 class="text">Account signout</h2>
+        <h3 class="text">Are you sure you want to signout?</h3>
+        <div class="btn"><button class="close-btn text">Cancel</button><button class="signup-btn text" >Signout</button></div>
+        </div>
+        </div>
+
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>   
+    <script src="supplier.js"></script>
+</body>
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="orderlist.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <title>Customers</title>
+    <link rel="stylesheet" href="customers.css">
+</head>
+<body>
+
+
+    <nav class="sidebar close">
+
+        <header>
+           
+            <!--Image logo-->
+            <div class="image-txt">
+              
+                     <span class="image">
+                     <img src="logo3.png" alt="logo">
+                </span>
+
+                 <!--Fonts Logo-->
+                <div class="txt header-text">
+                    <span class="name">GROUP-3</span>
+                    <span class="profession">Inventory Systems</span>
+                </div>
+                </div>
+
+             <!--Arrow for open close-->
+            <i class='bx bx-chevron-right toggle'></i>
+
+        </header>
+
+
+        <!--Sidebar components-->
+
+        <div class="menu-bar">
+            <div class="menu">
+                
+                <!--Dashboard HOME-->
+                <li class="nav-link">
+                 <a href="main-dashboard.html" class="active"><i class='bx bxs-dashboard icons icon' ></i><span class="text nav-text">Dashboard</span></a></li>
+                
+                
+                <ul class="menu-links">
+                    
+                    <div class="menu"><hr>Menu</div>
+                   
+                    <!--User Management-->
+                    <li class="nav-link">
+                        <a href="#"><i class='bx bxs-user icons' ></i><span class="text nav-text">User Management</span></a></li>
+
+                    
+                    <!--Items-->
+                    <li class="nav-link">
+                        <a href="#"><i class='bx bxs-component icons' ></i><span class="text nav-text itms">Items</span></a></li>
+                    
+                    <!--Sales Order-->
+                    <li class="nav-link">
+                        <a href="#"><i class='bx bxs-shopping-bag-alt icons' ></i><span class="text nav-text sloder">Sales Order</span></a></li>
+                        
+                    <!--Supplier-->
+                    <li class="nav-link">
+                        <a href="#"><i class='bx bx-sitemap icons' ></i><span class="text nav-text sup">Supplier</span></a></li>
+                    
+                   <!--Customers-->
+                    <li class="nav-link">
+                        <a href="#"><i class='bx bxs-user-detail icons'></i><span class="text nav-text custo">Customers</span></a></li>
+                </ul>
+            </div>
+
+
+             <!--Bottom content-->
+
+              <!--LOG OUT-->
+            <div class="bottom-content">
+                <li class="show-modal" >
+                  
+                        <button class='bx bx-log-out icons'><span class="text">Log-out</span></button>
+                </li>
+
+
+                  <!--Dark mode-->
+                <li class="mode">
+                    <div class="moon-sun">
+                    <i class='bx bxs-moon icons moon'></i>
+                    <i class='bx bxs-sun icons sun'></i>
+                </div>
+                    <span class="text mode-text darkmode">Dark Mode</span>
+                    <div class="toggle-switch">
+                    <span class="switch"></span>
+                   </div>
+                </li>
+            </div>  
+        </div>
+    </nav>
+
+
+             <!--ORDER LIST-->
+
+    <section class="container">
+        <h2 class="text">Customers Details</h2>
+        <hr>
+            <div class="row">
+                <div class="form-group">
+                    <label for="brand">Customer ID</label>
+                    <input
+                        type="text"
+                        name="brand"
+                        class="form-control"
+                        id="customer"
+                        placeholder="Enter customer ID"
+                    />
+                </div>
+                &ensp;
+                &ensp;
+                <div class="form-group">
+                    <label for="model">Full Name</label>
+                    <input
+                        type="text"
+                        name="model"
+                        class="form-control"
+                        id="fname"
+                        placeholder="Enter Full Name"
+                    />
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="company">Company</label>
+                    <input
+                        type="text"
+                        name="size"
+                        class="form-control"
+                        id="company"
+                        placeholder="Enter Company"
+                    />
+                </div>
+                &ensp;
+                &ensp;
+                <div class="form-group" >
+                    <label for="country">Country</label>
+                    <input
+                        type="text"
+                        name="quantity"
+                        class="form-control"
+                        id="country"
+                        placeholder="Enter Country"
+                    />
+                </div>
+                <br>
+                <div class="form-group" >
+                    <label for="name">Address</label>
+                    <input
+                        type="text"
+                        name="name"
+                        class="form-control"
+                        id="address"
+                        placeholder="Enter Address"
+                    />
+                </div>
+                <br>
+                <div class="form-group" >
+                    <label for="name">Email</label>
+                    <input
+                        type="text"
+                        name="name"
+                        class="form-control"
+                        id="email"
+                        placeholder="Enter Name"
+                    />
+                </div>
+                <br>
+                <div class="button">
+                    <button
+                    class="btn btn-success"
+                    id="Submit"
+                    onclick="AddData()">
+                        Submit
+                    </button>
+                    <button
+                    class="btn btn-primary"
+                    id="Update">Update
+                    </button>
+                </div>
+            </div>
+    </div>
+    <br>
+    <br>
+            <div class="row=">
+                <div class="text">
+                    <table class="table table-bordered" id="crudTable">
+                        <thead>
+                            <tr>
+                                <th>Customers ID</th>
+                                <th>Full Name</th>
+                                <th>Company</th>
+                                <th>Country</th>
+                                <th>Address</th>
+                                <th>Email Address</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+    </section>
+
+
+        <div class="modal-box">
+        <h2 class="text">Account signout</h2>
+        <h3 class="text">Are you sure you want to signout?</h3>
+        <div class="btn"><button class="close-btn text">Cancel</button><button class="signup-btn text" >Signout</button></div>
+        </div>
+        </div>
+
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>   
+    <script src="customers.js"></script>
+</body>
+</html>

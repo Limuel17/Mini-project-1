@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    
+     <!--Icons-->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="main-dashboard.css">
+</head>
+<body>
+
+    <nav class="sidebar close">
+
+        <header>
+           
+            <!--Image logo-->
+            <div class="image-txt">
+              
+                     <span class="image">
+                     <img src="logo.png" alt="logo">
+                </span>
+
+                 <!--Fonts Logo-->
+                <div class="txt header-text">
+                    <span class="name">GROUP-3</span>
+                    <span class="profession">Inventory Systems</span>
+                </div>
+                </div>
+
+             <!--Arrow for open close-->
+            <i class='bx bx-chevron-right toggle'></i>
+
+        </header>
+
+
+        <!--Sidebar components-->
+
+        <div class="menu-bar">
+            <div class="menu">
+                  
+                <!--Dashboard HOME-->
+                <li class="nav-link">
+                 <a href="" class="active"><i class='bx bxs-dashboard icons icon' ></i><span class="text nav-text">Dashboard</span></a></li>
+
+                
+                <ul class="menu-links">
+                    
+                    <div class="menu"><hr>Menu</div>
+                   
+                    <!--User Management-->
+                    <li class="nav-link">
+                        <a href="#"><i class='bx bxs-user icons' ></i><span class="text nav-text">User Management</span></a></li>
+
+                    
+                    <!--Items-->
+                    <li class="nav-link">
+                        <a href="#"><i class='bx bxs-component icons' ></i><span class="text nav-text itms">Items</span></a></li>
+                    
+                    <!--Sales Order-->
+                    <li class="nav-link">
+                        <a href="#"><i class='bx bxs-shopping-bag-alt icons' ></i><span class="text nav-text sloder">Sales Order</span></a></li>
+                        
+                    <!--Supplier-->
+                    <li class="nav-link">
+                        <a href="#"><i class='bx bx-sitemap icons' ></i><span class="text nav-text sup">Supplier</span></a></li>
+                    
+                   <!--Customers-->
+                    <li class="nav-link">
+                        <a href="#"><i class='bx bxs-user-detail icons'></i><span class="text nav-text custo">Customers</span></a></li>
+                </ul>
+            </div>
+
+
+             <!--Bottom content-->
+
+              <!--LOG OUT-->
+            <div class="bottom-content">
+                <li class="show-modal" >
+                  
+                        <button class='bx bx-log-out icons'><span class="text">Log-out</span></button>
+                </li>
+
+
+                  <!--Dark mode-->
+                <li class="mode">
+                    <div class="moon-sun">
+                    <i class='bx bxs-moon icons moon'></i>
+                    <i class='bx bxs-sun icons sun'></i>
+                </div>
+                    <span class="text mode-text darkmode">Dark Mode</span>
+                    <div class="toggle-switch">
+                    <span class="switch"></span>
+                   </div>
+                </li>
+            </div>  
+        </div>
+    </nav>
+                     
+                         <!--DASH BOARD-->
+                     
+                         <section class="home">
+                            <span class="text">Overview</span>
+                             <hr>
+                             <!--MAIN DASHBOARD Card-->
+                             <div class="content">
+                                <div class="cards">
+                                    <div class="card">
+                                        <div class="box">
+                                            <h1>61</h1>
+                                            <h3>Customer Email</h3>
+                                        </div>
+                                        <div class="icon-case">
+                                            <i class='bx bxs-envelope'></i>
+                                        </div>
+                                    </div>
+    
+                                    <div class="card">
+                                        <div class="box">
+                                            <h1>90</h1>
+                                            <h3>Sales order</h3>
+                                        </div>
+                                        <div class="icon-case">
+                                          <i class='bx bxs-package'></i>
+                                        </div>
+                                    </div>
+    
+                                    <div class="card">
+                                        <div class="box">
+                                            <h1>20</h1>
+                                            <h3>Pending Order</h3>
+                                        </div>
+                                        <div class="icon-case">
+                                          <i class='bx bxs-hourglass-top' ></i>
+                                        </div>
+                                    </div>
+    
+                                    <div class="card">
+                                        <div class="box">
+                                            <h1>88</h1>
+                                            <h3>Customers</h3>
+                                        </div>
+                                        <div class="icon-case">
+                                          <i class='bx bxs-user-check' ></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                   
+                                   <section class="content-2">
+                                    
+                                    <span class="text">Top selling shoes</span>
+
+                                  <!--Table-->
+
+                                    <table>
+                                        <tr>
+                                          <th>Company</th>
+                                          <th>Contact</th>
+                                          <th>Country</th>
+                                          <th>Brand</th>
+                                        </tr>
+                                        <tr>
+                                          <td>Alfreds Futterkiste</td>
+                                          <td>Maria Anders</td>
+                                          <td>Germany</td>
+                                          <td>Nike</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Centro comercial Moctezuma</td>
+                                          <td>Francisco Chang</td>
+                                          <td>Mexico</td>
+                                          <td>Nike</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Ernst Handel</td>
+                                          <td>Roland Mendel</td>
+                                          <td>Austria</td>
+                                          <td>Jordan</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Island Trading</td>
+                                          <td>Helen Bennett</td>
+                                          <td>UK</td>
+                                          <td>Adidas</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Laughing Bacchus Winecellars</td>
+                                          <td>Yoshi Tannamuri</td>
+                                          <td>Canada</td>
+                                          <td>New Balance</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Magazzini Alimentari Riuniti</td>
+                                          <td>Giovanni Rovelli</td>
+                                          <td>Italy</td>
+                                          <td>Reebok</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Jeff Bezoz</td>
+                                            <td>Sergey Brin</td>
+                                            <td>Poland</td>
+                                            <td>Puma</td>
+                                          </tr>
+                                          <tr>
+                                            <td>Warren Buffett</td>
+                                            <td>Meriam Adelson</td>
+                                            <td>Denmark</td>
+                                            <td>Vans</td>
+                                          </tr>
+                                      </table>
+
+                                      <button>See more...</button>
+
+
+                                      <div class="col">
+                                        <div class="circless">
+                                        <div class="circles">
+                                            <p>Total Sale</p>
+                                
+                                            <div class="circle-wrap">
+                                    <div class="circle">
+                                      <div class="mask full">
+                                        <div class="fill"></div>
+                                      </div>
+                                      <div class="mask half">
+                                        <div class="fill"></div>
+                                      </div>
+                                      <div class="inside-circle"> 90% </div>
+                                    </div>
+                                  </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                        
+                                    <div class="clearfix"></div>
+                                    
+                                  </div>
+                              
+                                   </section>
+                                
+
+                                    <!--SIGNOUT POPUP-->
+                                    
+                      
+                       <div class="modal-box">
+                        <h2 class="text">Account signout</h2>
+                        <h3 class="text">Are you sure you want to signout?</h3>
+                        <div class="btn"><button class="close-btn text">Cancel</button><button class="signup-btn text" >Signout</button></div>
+                        </div>
+                        </div>
+                       
+
+                     
+         
+                          
+
+                   
+
+
+    <script src="main-dashboard.js"></script>
+</body>
+</html>
