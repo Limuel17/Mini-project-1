@@ -583,7 +583,7 @@ body {
   }
  
 
-  table {
+  .table-bordered {
     position: absolute;
     background-color: var(--sidebar-color);
     

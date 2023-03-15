@@ -1,9 +1,14 @@
+
+
+//** DASHBOARD JAVASCRIPT **/
+
+
 const body = document.querySelector("body"),
       sidebar = document.querySelector(".sidebar"),
       toggle = document.querySelector(".toggle"),
       modeSwitch = document.querySelector(".toggle-switch"),
       modeText = document.querySelector(".mode-text"),
-      section = document.querySelector(".content"),
+      section = document.querySelector(".container-3"),
       showBtn = document.querySelector(".show-modal"),
       signupBtn = document.querySelector(".signup-btn"),
       salesOrder = document.querySelector(".sloder"),
@@ -40,43 +45,54 @@ const body = document.querySelector("body"),
       showBtn.addEventListener("click",() => body.classList.add("active"));
       closeBtn.addEventListener("click",() => body.classList.remove("active"));
 
-               //** signuo popup **/
+
      signupBtn.addEventListener("click", () => {
       window.location.replace("login.html")
-     })
-      
+     });
+
+
      //** SALES ORDER **/
-   
+
      salesOrder.addEventListener("click", () => {
-      window.location.assign("orderlist.html")
+        window.location.assign("Orderlist.html")
+  
+        
+         });
 
+         //** CUSTOMERS **/
+         customer.addEventListener("click", () => {
+            window.location.assign("customers.html")
       
-       })
+            
+             });
 
-       //** CUSTOMERS **/
-       customer.addEventListener("click", () => {
-        window.location.assign("customers.html")
-  
-        
-         })
+              //** items **/
+         items.addEventListener("click", () => {
+          window.location.assign("items.html")
+    
+          
+           });
 
-          //** items **/
-       items.addEventListener("click", () => {
-        window.location.assign("items.html")
-  
-        
-         })
-
-               //** Supplier **/
+                  //** Supplier **/
          supplier.addEventListener("click", () => {
           window.location.assign("supplier.html")
     
           
            });
 
-                   //** UserManagement **/
+
+                    //** UserManagement **/
          user.addEventListener("click", () => {
           window.location.assign("usermanagement.html")
     
           
            });
+
+
+
+
+
+    
+      
+   
+    

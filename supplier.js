@@ -15,6 +15,7 @@ const body = document.querySelector("body"),
       customer = document.querySelector(".custo"),
       items = document.querySelector(".itms"),
       supplier = document.querySelector(".sup"),
+      user = document.querySelector(".user"),
       closeBtn = document.querySelector(".close-btn");
       
       
@@ -79,6 +80,12 @@ const body = document.querySelector("body"),
           
            });
 
+        //** UserManagement **/
+        user.addEventListener("click", () => {
+          window.location.assign("usermanagement.html")
+    
+          
+           });
 
 
 
